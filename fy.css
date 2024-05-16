@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./ttf/qiji.ttf") format("truetype");
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #141414;
+}
+.txt-center {
+            position:  relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 150px;
+            font-family: "MyCustomFont";
+            text-align: center;
+            writing-mode: vertical-rl;
+            color: #f8f8f8;
+        }
+/* 隐藏滚动条 */
+.container::-webkit-scrollbar {
+    display: none;
+}
+/* 顶部导航栏 谷歌*/
+.container {
+  width: 100%;
+  height: 100%;
+  /* 溢出y轴保留滚动条，x轴隐藏滚动条 */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  /* 放在父级上，沿着y轴滑动  */
+  scroll-snap-type: y mandatory;
+    /*隐藏滚动条 兼容ie.火狐*/
+  scrollbar-width: none;
+  -ms-overflow-style: none; /* IE 10+ */
+
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  height: 7.5%; /* 更改为100%以适应网页宽度 */
+  width: 100%; /* 添加width: 100%以适应网页宽度 */
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* 添加justify-content: center以使表格居中 */
+}
+
+.navbar li {
+  list-style: none;
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+.navbar li a:hover {
+  color: #22bbff;
+}
+
+.navbar li a:hover {
+  color: #22bbff;
+}
+iframe.fi {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#home {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.txt-center {
+  position:relative;
+  top: 0%;
+  left: 0%;
+  transform: translate(0%, 0%);
+  font-size: 1000%;
+  font-family: "MyCustomFont";
+  text-align: center;
+  writing-mode: vertical-rl;
+  color: #ffffff;
+  z-index: 3
+}
+.txt-left-top {
+  writing-mode: vertical-rl;
+  font-family: "MyCustomFont";
+  font-size: 500%;
+  color: red;
+  text-align: center;
+  position: absolute;
+  top: 7.5%;
+  left: 0;
+  z-index: 3
+}
+.img-center {
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  z-index: 1
+}
+
+.img-center img {
+  position: absolute;
+  left:0;
+  top:7.5%;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 92.5%;
+  object-fit: cover; 
+  z-index: 2
+}
+
+.txt-right-bottom {
+  font-family: "MyCustomFont";
+  font-size: 500%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: absolute;
+  right:0;
+  bottom: 0;
+  z-index: 3
+}
+
+/* 内容 */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: #f4f4f4;
+
+  /* 放在子元素上，和上面那个父元素一伙的 */
+  scroll-snap-align: center;
+}
