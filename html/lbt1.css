@@ -5,15 +5,19 @@
 li{
     list-style: none;
 }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-.shell{
-    width: 1000px;
-    height: 400px;
+.shell {
+    width: 100%;
+    height: 100vh;
     position: relative;
     overflow: hidden;
-    float: left;
-    display: block;
 }
+
+
 .images{
     width: 500%;
     /* 几张图片写几百 */
@@ -61,6 +65,7 @@ li{
     opacity: .5;
 }
 .button{
+    top:25%;
     width: 100%;
     height: 100%;
     position: absolute;
