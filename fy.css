@@ -111,7 +111,7 @@ iframe.fi {
 .img-center {
   position: absolute;
   left: 0;
-  top:0;
+  top:7.5%;
   width: 100%;
   height: 100%;
   z-index: 1
@@ -120,7 +120,7 @@ iframe.fi {
 .img-center img {
   position: absolute;
   left:0;
-  top:7.5%;
+  top:0%;
   width: 100%;
   height: 100%;
   max-width: 100%;
@@ -139,7 +139,25 @@ iframe.fi {
   bottom: 0;
   z-index: 3
 }
-
+.txt-center1{
+  font-family: "MyCustomFont";
+  font-size: 250%;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 2.5%;
+  left: -2.5%;
+}
+iframe{
+  position: relative;
+  left: 0%;
+  top:4.5%;
+  right: 15%;
+  bottom: 0%;
+  width: 70%;
+  height: 85%;
+  z-index: 0
+}
 /* 内容 */
 section {
   display: flex;
