@@ -46,17 +46,21 @@ body {
 .navbar {
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 1000;
   display: flex;
   height: 7.5%; /* 更改为100%以适应网页宽度 */
   width: 100%; /* 添加width: 100%以适应网页宽度 */
   background: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: row;
-  justify-content: space-between; /* 添加justify-content: center以使表格居中 */
+  right: 0;
+  left: 0;
+  align-items: center
+ /* 添加justify-content: center以使表格居中 */
 }
 
 .navbar li {
+  font-size: 200%;
   list-style: none;
   margin: 0 1rem;
   padding: 1rem;
@@ -81,6 +85,26 @@ iframe.fi {
   display: block;
 }
 #home {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+#information {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+#staff {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+#world {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+#media {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -157,6 +181,79 @@ iframe{
   width: 70%;
   height: 85%;
   z-index: 0
+}
+
+.txt-center2 {
+  position: absolute;
+  top: 7.5%;
+  left: -2.5%;
+  right: 0;
+  bottom: 0;
+  font-family: "MyCustomFont";
+  width: 100%;
+  position: relative
+  color: #fff;
+  font-size: 250%;
+}
+
+.img-center2 {
+  position: relative;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translate(0%,0%);
+}
+.lead1 {
+  writing-mode: vertical-rl;
+  font-family: "MyCustomFont";
+  font-size: 600%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: relative;
+  right:25%;
+  top:15%;
+  z-index: 3
+}
+.lead2 {
+  writing-mode: vertical-rl;
+  font-family: "MyCustomFont";
+  font-size: 600%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: relative;
+  left:25%;
+  bottom: 0;
+  z-index: 3
+}
+.img-center2 img {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0%;
+  transform: translate(0%,-0%);
+}
+
+.img-center2:first-child img {
+  width: 50%;
+}
+
+.img-center2:last-child img {
+  width: 50%;
+}
+.txt-left-top2{
+  font-family: "MyCustomFont";
+  font-size: 300%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  top: 15%;
+  right: 0;
+  transform: translate(0%,0%);
+  max-width: 60%;
+  z-index: 3
+  position: relative;
+  top:0;
 }
 /* 内容 */
 section {
